@@ -1,10 +1,11 @@
 # datacleaning Project: A guide for the run_analysis.R 
 
 The code starts with reading the data from two different folders. 
-1. Read features from "UCI" folder.
-2 . Test dat from "UCI/Test/" folder.
-3. Training dataset from "UCI/train/" folder. program assumes this folder and corresponding subfolders (and files) are in the same location where R file is located.
-
+1. Read features from "Data" folder.
+2 . Test dat from "Test" folder.
+3. Training dataset from "train" folder.
+ 
+Please note: The program assumes that the (uncompressed) Samsung data  is available in the working directory.  
 
 After reading test data, program combibnes testdata with the corresponding activites.. the combines data is stored in a variable called
 
