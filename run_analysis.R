@@ -1,17 +1,17 @@
 #Read features
-traindata=read.table("./UCI/features.txt", sep="")
+traindata=read.table("./getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/features.txt", sep="")
 cNames<-traindata[,2]
 #Read Test Dataset
-testdata=read.table("./UCI/test/X_test.txt", sep="", col.names=cNames)
-testactivity<-read.table("./UCI/test/Y_test.txt", sep="\n")
+testdata=read.table("./getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt", sep="", col.names=cNames)
+testactivity<-read.table("./getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/Y_test.txt", sep="\n")
 
 #combined features and acitvity
 testdata<-cbind(testdata, testactivity)
 
 #Read training dataset 
 
-traindata=read.table("./UCI/train/X_train.txt", sep="", col.names=cNames)
-trainactivity<-read.table("./UCI/train/Y_train.txt", sep="\n")
+traindata=read.table("./getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt", sep="", col.names=cNames)
+trainactivity<-read.table("./getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/Y_train.txt", sep="\n")
 
 #combining features and activity label
 traindata<-cbind(traindata, trainactivity)
